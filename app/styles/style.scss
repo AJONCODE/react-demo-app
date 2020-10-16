@@ -38,7 +38,7 @@ p {
   margin: 0;
 }
 
-.tronConnectorDiv {
+.connector-div {
   height: 100vh;
   width: 100vw;
   padding: 4rem;
@@ -47,7 +47,7 @@ p {
 }
 
 @media (max-width: 767.98px) {
-  .tronConnectorDiv {
+  .connector-div {
     height: 100vh;
     padding: 4rem;
     display: flex;
@@ -55,7 +55,7 @@ p {
   }
 }
 
-.tronConnectorColumnFlex {
+.connector-column-flex {
   display: flex;
   flex-direction: column;
   justify-self: center;

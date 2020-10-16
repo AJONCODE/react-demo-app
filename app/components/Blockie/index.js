@@ -9,8 +9,8 @@ import React from 'react';
 // import styled from 'styled-components';
 import blockies from 'ethereum-blockies';
 
-function Blockie({ tronAddress }) {
-  const seed = tronAddress.toLowerCase() || '';
+function Blockie({ address }) {
+  const seed = address.toLowerCase() || '';
   const imgUrl = blockies
     .create({
       // All options are optional
@@ -26,11 +26,11 @@ function Blockie({ tronAddress }) {
     .toDataURL();
   return (
     <div>
-      <a href={`https://etherscan.io/address/${tronAddress}`} target="blank">
-        <img src={imgUrl} alt={tronAddress} />
+      <a href={`https://etherscan.io/address/${address}`} target="blank">
+        <img src={imgUrl} alt={address} />
         <p style={pStyle}>
-          {tronAddress.substring(0, 3)}..
-          {tronAddress.substring(tronAddress.length - 2)}
+          {address.substring(0, 3)}..
+          {address.substring(address.length - 2)}
         </p>
       </a>
     </div>
@@ -39,11 +39,11 @@ function Blockie({ tronAddress }) {
 
 const pStyle = {
   fontFamily: 'Gotham',
-  fontSize: '13px',
-  fontWeight: '700',
+  fontSize: '11px',
+  fontWeight: '600',
   color: '#ffffff',
   textAlign: 'center',
-  paddingRight: '10px',
+  paddingRight: '15px',
   margin: '0px',
 };
 

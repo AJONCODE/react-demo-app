@@ -12,8 +12,7 @@ import messages from './messages';
 
 import TableComponent from '../../components/TableComponent';
 
-export default function HomePage({ tronAddress }) {
-  console.log('tronAddress: ', tronAddress);
+export default function HomePage() {
   const tableHeaders = [
     { title: 'Name', tag: 'name' },
     { title: 'Team', tag: 'team' },

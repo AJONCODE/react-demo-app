@@ -7,23 +7,18 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 // import styled from 'styled-components';
-import { GiHamburgerMenu } from 'react-icons/gi';
 import Blockie from '../Blockie';
 import HamburgerToggler from '../HamburgerToggler';
 
 import logo from '../../images/logo.png';
 
-function Header({
-  tronAddress,
-  handleToggleSidebarViaHeader,
-  toggleSidebarViaHeader,
-}) {
+import MetamaskContext from '../../contexts/metamask';
+
+function Header({ handleToggleSidebarViaHeader, toggleSidebarViaHeader }) {
+  const metamask = React.useContext(MetamaskContext);
+
   return (
     <div className="headerMain">
-      {/* <GiHamburgerMenu
-        onClick={() => handleToggleSidebarViaHeader()}
-        style={hamburgerMenu}
-      /> */}
       <HamburgerToggler
         handleToggleSidebarViaHeader={() => handleToggleSidebarViaHeader()}
         toggleSidebarViaHeader={toggleSidebarViaHeader}
@@ -31,9 +26,9 @@ function Header({
 
       <img className="heartbeat" src={logo} style={logoImg} />
 
-      {tronAddress ? (
+      {metamask.ethereumAddress ? (
         <React.Fragment>
-          <Blockie tronAddress={tronAddress} />
+          <Blockie address={metamask.ethereumAddress} />
         </React.Fragment>
       ) : (
         <div />
