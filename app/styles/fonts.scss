@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'AstronBoy';
+  src: url('../fonts/AstronBoy/astron boy video.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/AstronBoy/astron boy video.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/AstronBoy/astron boy video.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('../fonts/AstronBoy/AstronBoyVideo-Regular.woff') format('woff'),
+    /* Pretty Modern Browsers */ url('../fonts/AstronBoy/astron boy video.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('../fonts/AstronBoy/AstronBoyVideo-Regular.svg#svgFontName')
+      format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'GhostClanGrad';
+  src: url('../fonts/GhostClanGrad/ghostclangrad.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/GhostClanGrad/ghostclangrad.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/GhostClanGrad/ghostclangrad.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('../fonts/GhostClanGrad/GhostClanGradient.woff') format('woff'),
+    /* Pretty Modern Browsers */ url('../fonts/GhostClanGrad/ghostclangrad.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('../fonts/GhostClanGrad/GhostClanGradient.svg#svgFontName')
+      format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'GhostClan';
+  src: url('../fonts/GhostClan/ghostclan.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/GhostClan/ghostclan.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/GhostClan/ghostclan.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/GhostClan/GhostClan.woff')
+      format('woff'),
+    /* Pretty Modern Browsers */ url('../fonts/GhostClan/ghostclan.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('../fonts/GhostClan/GhostClan.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

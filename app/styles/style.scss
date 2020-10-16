@@ -1,0 +1,173 @@
+// APP
+
+p {
+  color: #f1efee;
+}
+
+.headerMain {
+  display: flex;
+  background-color: #15151b;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  border-bottom: '1px solid white';
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.loadingMain {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 5rem;
+}
+
+.spinnerText {
+  font-family: 'Dancing Script', cursive;
+  font-size: medium;
+  font-weight: 700;
+  margin: 0;
+}
+
+.tronConnectorDiv {
+  height: 100vh;
+  width: 100vw;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 767.98px) {
+  .tronConnectorDiv {
+    height: 100vh;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.tronConnectorColumnFlex {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  margin: 20px;
+}
+
+.para {
+  font-family: 'Times New Roman', serif;
+  font-size: 1.5rem;
+}
+
+.heading1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  // color: #ec4031;
+}
+
+.heading2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  // color: #ec4031;
+}
+
+.heading3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  // color: #ec4031;
+}
+
+.grow {
+  transition: all 0.3s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.05);
+}
+
+.cssCard1 {
+  background: #16a085 !important; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f4d03f,
+    #16a085
+  ) !important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f4d03f,
+    #16a085
+  ) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.cssCard2 {
+  background: #00c3ff !important; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffff1c,
+    #00c3ff
+  ) !important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffff1c,
+    #00c3ff
+  ) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.cssCard3 {
+  background: #d1913c !important; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffd194,
+    #d1913c
+  ) !important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffd194,
+    #d1913c
+  ) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.cssCard4 {
+  background: #22c1c3 !important; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fdbb2d,
+    #22c1c3
+  ) !important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fdbb2d,
+    #22c1c3
+  ) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.cssCard5 {
+  background: #22c1c3 !important; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fdbb2d,
+    #22c1c3
+  ) !important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fdbb2d,
+    #22c1c3
+  ) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.cssCard6 {
+  background: #4da0b0 !important; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #d39d38,
+    #4da0b0
+  ) !important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #d39d38,
+    #4da0b0
+  ) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
