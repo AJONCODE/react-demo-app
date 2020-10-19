@@ -100,6 +100,11 @@ function Sidebar({
             {' '}
             <NavLink to="/animated-card-group">Card Group</NavLink>
           </MenuItem>
+
+          <MenuItem icon={<FaCoins />}>
+            {' '}
+            <NavLink to="/tokenomics">Tokenomics</NavLink>
+          </MenuItem>
         </Menu>
       </SidebarContent>
       <SidebarFooter style={{ textAlign: 'center' }}>

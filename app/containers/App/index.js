@@ -28,6 +28,7 @@ import '../../styles/alertDiv.scss';
 import '../../styles/animationTransition.scss';
 import '../../styles/animatedCardScreenWithSlider.scss';
 import '../../styles/animatedCard.scss';
+import '../../styles/tokenomicsAnimation.scss';
 
 // config
 import { contractDeployedNetwork } from '../../utils/config';
@@ -49,6 +50,9 @@ const AnimatedCardScreenWithSlider = React.lazy(() =>
 );
 const AnimatedCardGroup = React.lazy(() =>
   import('../AnimatedCardGroup/Loadable'),
+);
+const Tokenomics = React.lazy(() =>
+  import('../Tokenomics/Loadable'),
 );
 const NotFoundPage = React.lazy(() => import('../NotFoundPage/Loadable'));
 
@@ -177,6 +181,10 @@ export default function App() {
       path: '/animated-card-group',
       mainClass: 'animatedCardGroupMain',
       main: () => <AnimatedCardGroup />,
+    },
+    {
+      path: '/tokenomics',
+      main: () => <Tokenomics />,
     },
   ];
 

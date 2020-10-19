@@ -1,0 +1,126 @@
+.center-tokenomics {
+  margin: auto;
+  width: 87vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-tokenomics {
+  width: 700px;
+  flex-shrink: 0;
+  background: white;
+  overflow: hidden;
+  height: 364px;
+  border-radius: 8px;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+
+  @media (max-width: 700px) {
+    width: 570px;
+    height: 250px;
+  }
+
+  @media (max-width: 500px) {
+    width: 365px;
+    height: 175px;
+  }
+
+  svg {
+    &:not(:root) {
+      overflow: visible;
+    }
+    width: 150%;
+    position: relative;
+    right: 130px;
+    top: 10px;
+    overflow: visible;
+
+    @media (max-width: 500px) {
+      width: 140%;
+      right: 40px;
+      top: 0px;
+    }
+  }
+}
+
+.card-wrap-tokenomics {
+  width: 260px;
+  float: right;
+  background: #665aa7;
+  padding: 50px;
+  transform: scale(1.5) rotate(20deg);
+
+  @media (max-width: 700px) {
+    width: 200px;
+  }
+
+  @media (max-width: 500px) {
+    width: 175px;
+    transform: scale(1.2) rotate(20deg);
+  }
+}
+
+.card-tokenomics {
+  transform: scale(0.75) rotate(-20deg);
+}
+
+#sunglasses {
+  transition: transform 0.15s;
+  .goto-tokenomics:hover ~ .card-wrap-tokenomics & {
+    transform: translateY(-40px);
+  }
+}
+
+#right_eye {
+  &_wink {
+    display: none;
+  }
+  .goto-tokenomics:active ~ .card-wrap-tokenomics & {
+    display: none;
+    &_wink {
+      display: block;
+    }
+  }
+}
+
+#mouth {
+  transition: transform 0.15s;
+  .goto-tokenomics:hover ~ .card-wrap-tokenomics & {
+    transform: translateY(-10px);
+  }
+}
+
+#front_hand,
+#back_hand {
+  transition: transform 0.03s;
+  .goto-tokenomics:active ~ .card-wrap-tokenomics & {
+    transform: translateX(10px);
+  }
+}
+
+.goto-tokenomics {
+  outline: none;
+  background: #665aa7;
+  border: 0;
+  color: white;
+  position: relative;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  padding: 12px 16px;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+  border-radius: 4px;
+  transition: all 0.1s ease-out;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+  &:hover:not(:active) {
+    background: lighten(#665aa7, 10%);
+  }
+
+  @media (max-width: 500px) {
+    left: 4%;
+    padding: 12px 10px;
+  }
+}
